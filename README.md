@@ -118,8 +118,9 @@ ubuntu@attacker:~$
 ## FQDN list
 
 Alexa Top 1000: 
-https://github.com/urbanadventurer/WhatWeb/blob/master/plugin-development/alexa-top-1000.txt
-https://gist.githubusercontent.com/bejaneps/ba8d8eed85b0c289a05c750b3d825f61/raw/6827168570520ded27c102730e442f35fb4b6a6d/websites.csv
+
+- https://github.com/urbanadventurer/WhatWeb/blob/master/plugin-development/alexa-top-1000.txt
+- https://gist.githubusercontent.com/bejaneps/ba8d8eed85b0c289a05c750b3d825f61/raw/6827168570520ded27c102730e442f35fb4b6a6d/websites.csv
 
 ```
 cut -d , -f 2 websites.csv | sed 's/$/ A' > fqdn.txt
