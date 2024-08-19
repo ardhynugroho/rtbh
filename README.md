@@ -117,11 +117,18 @@ ubuntu@attacker:~$
 ```
 ## FQDN list
 
-Alexa Top 1000: 
-
-- https://github.com/urbanadventurer/WhatWeb/blob/master/plugin-development/alexa-top-1000.txt
-- https://gist.githubusercontent.com/bejaneps/ba8d8eed85b0c289a05c750b3d825f61/raw/6827168570520ded27c102730e442f35fb4b6a6d/websites.csv
+https://github.com/DNS-OARC/sample-query-data
 
 ```
-cut -d , -f 2 websites.csv | sed 's/$/ A' > fqdn.txt
+git clone https://github.com/DNS-OARC/sample-query-data
+cd sample-query-data
+xzcat queryfile-example-10million-201202_*.xz > ../10jutequery.txt
+```
+
+## Install dnsperf tool
+
+```
+sudo add-apt-repository ppa:dns-oarc/dnsperf
+sudo apt update
+sudo apt install dnsperf
 ```
